@@ -28,6 +28,7 @@ const StyledWork = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 260px;
+  object-fit: cover;
 `
 
 const Link = styled.a`

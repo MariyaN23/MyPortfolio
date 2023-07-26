@@ -2,6 +2,7 @@
   "name": "portfolio-start",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https//mariyan23.github.io/MyPortfolio",
   "dependencies": {
     "@babel/core": "7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.3",
@@ -64,6 +65,8 @@
     "workbox-webpack-plugin": "6.4.1"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -88,7 +91,8 @@
   },
   "devDependencies": {
     "@types/styled-components": "5.1.26",
-    "babel-plugin-styled-components": "2.0.7"
+    "babel-plugin-styled-components": "2.0.7",
+    "gh-pages": "^5.0.0"
   },
   "jest": {
     "roots": [

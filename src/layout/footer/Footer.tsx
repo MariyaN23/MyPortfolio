@@ -42,7 +42,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: rgba(255, 241, 152, 0.42);
+  background-color: rgb(43, 0, 255);
   min-height: 20vh;
 `
 

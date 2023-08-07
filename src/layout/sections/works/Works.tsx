@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
@@ -8,33 +8,58 @@ import timerImg from "../../../assets/images/proj-2.webp"
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles";
 
-const worksitems = ["All", "landing page", "React", "spa"]
+//const tabsItems = ["All", "landing page", "React", "spa"]
 
-const workData = [
+const tabsItems: Array<{title: string, status: "all" | "landing" | "react" | "spa"}> = [
+    {
+        title: "All",
+        status: "all"
+    },
+    {
+        title: "landing page",
+        status: "landing"
+    },
+    {
+        title: "React",
+        status: "react"
+    },
+    {
+        title: "spa",
+        status: "spa"
+    }
+]
+
+const worksData = [
     {
         title: "Social Network",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        src: socialImg
+        src: socialImg,
+        type: "spa"
     },
     {
         title: "Timer",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        src: timerImg
+        src: timerImg,
+        type: "React"
     }
 ]
 
 export const Works: React.FC = () => {
+
+    const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
+    const filteredWorks = worksData
+
     return (
         <S.Works>
             <Container>
                 <SectionTitle>My works</SectionTitle>
-                <TabMenu menuItems={worksitems}/>
+                <TabMenu tabsItems={tabsItems}/>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
 
-                    {workData.map((w, index)=>{
-                        return  <Work title={w.title} key={index}
-                                      text={w.text}
-                                      src={w.src}/>
+                    {filteredWorks.map((w, index) => {
+                        return <Work title={w.title} key={index}
+                                     text={w.text}
+                                     src={w.src}/>
                     })}
                 </FlexWrapper>
             </Container>

@@ -48,8 +48,6 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-/*  font-size: 27px;
-  font-weight: 400;*/
   ${font({weight: 400, Fmax: 27, Fmin: 20})}
   
   p {
@@ -59,9 +57,6 @@ const MainTitle = styled.h1`
 
 const Name = styled.h2`
   ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
-/*  font-family: 'Josefin Sans', sans-serif;
-  font-size: 50px;
-  font-weight: 700;*/
   letter-spacing: 2.5px;
   margin: 10px 0;
 

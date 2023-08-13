@@ -75,16 +75,8 @@
               fill="currentColor"/>
     </g>
     <!--   Arrows-->
-    <g>
-        <g clip-path="url(#clip0_20_2005)">
-            <rect width="30" height="30" fill="black" fill-opacity="0.3"/>
+    <g id="arrowGoTop">
             <path d="M13.8072 11.2806V22H16.1928V11.2806L21.3134 16.0812L23 14.5L15 7L7 14.5L8.6866 16.0812L13.8072 11.2806Z"
                   fill="white"/>
-        </g>
-        <defs>
-            <clipPath id="clip0_20_2005">
-                <rect width="30" height="30" fill="white"/>
-            </clipPath>
-        </defs>
     </g>
 </svg>

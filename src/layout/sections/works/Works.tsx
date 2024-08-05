@@ -3,8 +3,12 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu, TabStatusType} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
-import socialImg from "../../../assets/images/proj-1.webp";
-import timerImg from "../../../assets/images/proj-2.webp"
+import counterImg from "../../../assets/images/counter.webp";
+import flashcardsImg from "../../../assets/images/flashcards.webp";
+import gameImg from "../../../assets/images/game-catch-the-orange.webp";
+import socialImg from "../../../assets/images/social-network.webp";
+import todolistImg from "../../../assets/images/todoList.webp";
+import weatherImg from "../../../assets/images/weather-app.webp";
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles";
 import {AnimatePresence, motion} from "framer-motion"
@@ -15,60 +19,72 @@ const tabsItems: Array<{ title: string, status: TabStatusType }> = [
         status: "all"
     },
     {
-        title: "landing page",
-        status: "landing"
+        title: "JS",
+        status: "js"
     },
     {
         title: "React",
         status: "react"
     },
     {
-        title: "spa",
-        status: "spa"
+        title: "In progress",
+        status: "in-progress"
     }
 ]
 
 const worksData = [
     {
-        title: "Social Network",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        src: socialImg,
-        type: "spa",
+        title: "TodoList",
+        text: "List of todo lists and tasks.",
+        src: todolistImg,
+        link: "https://mariyan23.github.io/TodoList",
+        code: "https://github.com/MariyaN23/TodoList",
+        type: "react",
         id: 1
     },
     {
-        title: "Timer",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        src: timerImg,
+        title: "Social Network",
+        text: "A service containing information about users.",
+        link: "https://mariyan23.github.io/social-network",
+        code: "https://github.com/MariyaN23/social-network",
+        src: socialImg,
         type: "react",
         id: 2
     },
     {
-        title: "Social Network",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        src: socialImg,
-        type: "spa",
+        title: "Counter",
+        text: "",
+        link: "https://mariyan23.github.io/counter/",
+        code: "https://github.com/MariyaN23/counter",
+        src: counterImg,
+        type: "react",
         id: 3
     },
     {
-        title: "Timer",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        src: timerImg,
-        type: "react",
+        title: "Game: Catch the orange",
+        text: "The game is about capybaras trying to catch oranges.",
+        link: "https://mariyan23.github.io/Game-Catch-the-orange/",
+        code: "https://github.com/MariyaN23/Game-Catch-the-orange",
+        src: gameImg,
+        type: "js",
         id: 4
     },
     {
-        title: "Social Network",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        src: socialImg,
-        type: "spa",
+        title: "Weather App",
+        text: "",
+        link: "https://mariyan23.github.io/weather-app/",
+        code: "https://github.com/MariyaN23/weather-app",
+        src: weatherImg,
+        type: "react",
         id: 5
     },
     {
-        title: "Timer",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        src: timerImg,
-        type: "react",
+        title: "Flashcards",
+        text: "",
+        link: "",
+        code: "https://github.com/MariyaN23/Game-Catch-the-orange",
+        src: flashcardsImg,
+        type: "in-progress",
         id: 6
     }
 ]
@@ -78,14 +94,14 @@ export const Works: React.FC = () => {
     const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
     let filteredWorks = worksData
 
-    if (currentFilterStatus === "landing") {
-        filteredWorks = worksData.filter(work => work.type === "landing")
+    if (currentFilterStatus === "js") {
+        filteredWorks = worksData.filter(work => work.type === "js")
     }
     if (currentFilterStatus === "react") {
         filteredWorks = worksData.filter(work => work.type === "react")
     }
-    if (currentFilterStatus === "spa") {
-        filteredWorks = worksData.filter(work => work.type === "spa")
+    if (currentFilterStatus === "in-progress") {
+        filteredWorks = worksData.filter(work => work.type === "in-progress")
     }
 
     function changeFilterStatus(value: TabStatusType) {
@@ -116,6 +132,8 @@ export const Works: React.FC = () => {
                                           key={w.id}
                                           text={w.text}
                                           src={w.src}
+                                          link={w.link}
+                                          code={w.code}
                                     />
                                 </motion.div>
                             )

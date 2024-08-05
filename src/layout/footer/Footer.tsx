@@ -5,16 +5,16 @@ import {S} from "./Footer_Styles";
 
 const socialItemsData = [
     {
-        iconId: "instagram"
+        iconId: "github",
+        link: "https://github.com/MariyaN23",
     },
     {
-        iconId: "telegram"
+        iconId: "telegram",
+        link: "https://t.me/maryiaN2023",
     },
     {
-        iconId: "vk"
-    },
-    {
-        iconId: "linkedin"
+        iconId: "linkedin",
+        link: "https://www.linkedin.com/in/maryianikitenko",
     }
 ]
 
@@ -22,21 +22,23 @@ export const Footer: React.FC = () => {
     return (
         <S.Footer>
             <FlexWrapper direction={"column"} align={"center"}>
-                <S.Name>Maria</S.Name>
+                <S.Name>Maria Nikitenko</S.Name>
                 <S.SocialList>
 
                     {socialItemsData.map((s, index)=>{
                         return (
                         <S.SocialItem key={index}>
                             <S.SocialLink>
-                                <Icon height={"21px"} width={"21px"} viewBox={"0 0 21 21"} iconId={s.iconId}/>
+                                <a href={s.link} target="_blank" rel="noopener noreferrer">
+                                    <Icon height={"25px"} width={"25px"} viewBox={"1 0 22 20"} iconId={s.iconId}/>
+                                </a>
                             </S.SocialLink>
                         </S.SocialItem>
                         )
                     })}
 
                 </S.SocialList>
-                <S.Copyright>© 2023 Maria Nikitenko, All Rights Reserved.</S.Copyright>
+                <S.Copyright>© 2024 Maria Nikitenko, All Rights Reserved.</S.Copyright>
             </FlexWrapper>
         </S.Footer>
     );

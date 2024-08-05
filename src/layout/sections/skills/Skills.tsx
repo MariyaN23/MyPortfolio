@@ -10,33 +10,63 @@ import { Fade } from "react-awesome-reveal";
 const skillData = [
     {
         iconId: "code",
-        title: "html5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        title: "html"
     },
     {
         iconId: "css",
-        title: "css3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        title: "css"
+    },
+    {
+        iconId: "javascript",
+        title: "JavaScript"
     },
     {
         iconId: "react",
-        title: "React",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        title: "React"
+    },
+    {
+        iconId: "redux",
+        title: "redux"
     },
     {
         iconId: "typeScript",
-        title: "typescript",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        title: "typescript"
+    },
+    {
+        iconId: "react-router",
+        title: "react router"
+    },
+    {
+        iconId: "axios",
+        title: "axios"
+    },
+    {
+        iconId: "postman",
+        title: "postman"
+    },
+    {
+        iconId: "storybook",
+        title: "storybook"
+    },
+    {
+        iconId: "mui",
+        title: "material ui"
+    },
+    {
+        iconId: "sass",
+        title: "Preprocessor (SASS)"
     },
     {
         iconId: "styled-components",
-        title: "styled components",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        title: "styled components"
     },
     {
         iconId: "figma",
-        title: "WEB DESIgN",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        title: "WEB DESIgN"
+    },
+    {
+        iconId: "git",
+        title: "version control (git)"
     }
 ]
 
@@ -50,7 +80,8 @@ export const Skills: React.FC = () => {
                         {skillData.map((s, index) => {
                             return <Skill iconId={s.iconId} key={index}
                                           title={s.title}
-                                          description={s.description}/>
+                                          //description={s.description}
+                            />
                         })}
                     </Fade>
                 </FlexWrapper>

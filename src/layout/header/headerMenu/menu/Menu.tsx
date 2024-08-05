@@ -15,10 +15,6 @@ const items = [
         href: "works"
     },
     {
-        title: "Testimony",
-        href: "testimony"
-    },
-    {
         title: "Contact",
         href: "contact"
     }

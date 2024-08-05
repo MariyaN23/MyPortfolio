@@ -6,7 +6,7 @@ import {S} from "../Skills_styles"
 type SkillPropsType = {
     iconId: string;
     title: string;
-    description: string;
+    description?: string;
 }
 
 export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {

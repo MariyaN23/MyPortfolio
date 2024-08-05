@@ -11,7 +11,11 @@ export const Slogan: React.FC = () => {
             <Container>
                 <FlexWrapper direction={"column"} align={"center"}>
                 <SectionTitle>I Am Available For Freelance</SectionTitle>
-                <Button>Hire me</Button>
+                <Button>
+                    <a href={"https://www.linkedin.com/in/maryianikitenko"} target="_blank" rel="noopener noreferrer">
+                    Hire me
+                    </a>
+                </Button>
                 </FlexWrapper>
             </Container>
         </StyledSlogan>

@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/MyPortfolio/static/js/main.ffb228fa.js",
+    "main.js": "/MyPortfolio/static/js/main.3f25f2a2.js",
     "static/js/787.25eaef86.chunk.js": "/MyPortfolio/static/js/787.25eaef86.chunk.js",
     "static/media/photo.webp": "/MyPortfolio/static/media/photo.9960b08b4e8953b488c9.webp",
     "static/media/game-catch-the-orange.webp": "/MyPortfolio/static/media/game-catch-the-orange.04e70c97810cc304ab46.webp",
+    "static/media/capybara-chat.webp": "/MyPortfolio/static/media/capybara-chat.b4b2fd756be272051690.webp",
     "static/media/icons-sprite.svg": "/MyPortfolio/static/media/icons-sprite.c20594a49aaa8ec0acf0ee62086532e4.svg",
-    "static/media/flashcards.webp": "/MyPortfolio/static/media/flashcards.67268db2bc3379d5602d.webp",
     "static/media/todoList.webp": "/MyPortfolio/static/media/todoList.459006835f933c6fdb65.webp",
     "static/media/social-network.webp": "/MyPortfolio/static/media/social-network.ed3f37b1d56261887285.webp",
     "static/media/weather-app.webp": "/MyPortfolio/static/media/weather-app.f122aa36af149b06f198.webp",
     "static/media/counter.webp": "/MyPortfolio/static/media/counter.0a4696e7859d1f2baba4.webp",
     "index.html": "/MyPortfolio/index.html",
-    "main.ffb228fa.js.map": "/MyPortfolio/static/js/main.ffb228fa.js.map",
+    "main.3f25f2a2.js.map": "/MyPortfolio/static/js/main.3f25f2a2.js.map",
     "787.25eaef86.chunk.js.map": "/MyPortfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.ffb228fa.js"
+    "static/js/main.3f25f2a2.js"
   ]
 }

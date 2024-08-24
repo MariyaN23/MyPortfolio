@@ -4,7 +4,7 @@ import {TabMenu, TabStatusType} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import counterImg from "../../../assets/images/counter.webp";
-import flashcardsImg from "../../../assets/images/flashcards.webp";
+import capybaraChat from "../../../assets/images/capybara-chat.webp";
 import gameImg from "../../../assets/images/game-catch-the-orange.webp";
 import socialImg from "../../../assets/images/social-network.webp";
 import todolistImg from "../../../assets/images/todoList.webp";
@@ -19,17 +19,17 @@ const tabsItems: Array<{ title: string, status: TabStatusType }> = [
         status: "all"
     },
     {
-        title: "JS",
+        title: "JavaScript",
         status: "js"
     },
     {
         title: "React",
         status: "react"
-    },
+    },/*
     {
         title: "In progress",
         status: "in-progress"
-    }
+    }*/
 ]
 
 const worksData = [
@@ -79,12 +79,12 @@ const worksData = [
         id: 5
     },
     {
-        title: "Flashcards",
+        title: "Capybara chat",
         text: "",
-        link: "",
-        code: "https://github.com/MariyaN23/Game-Catch-the-orange",
-        src: flashcardsImg,
-        type: "in-progress",
+        link: "https://mariyan23.github.io/capybara-chat-front/",
+        code: "https://github.com/MariyaN23/chat",
+        src: capybaraChat,
+        type: "react",
         id: 6
     }
 ]

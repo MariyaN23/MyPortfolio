@@ -65,9 +65,21 @@ const skillData = [
         title: "WEB DESIgN"
     },
     {
+        iconId: "mantine",
+        title: "mantine"
+    },
+    {
+        iconId: "express",
+        title: "express"
+    },
+    {
+        iconId: "mongodb",
+        title: "mongodb"
+    },
+    {
         iconId: "git",
         title: "version control (git)"
-    }
+    },
 ]
 
 export const Skills: React.FC = () => {

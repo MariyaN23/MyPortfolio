@@ -9,6 +9,7 @@ import gameImg from "../../../assets/images/game-catch-the-orange.webp";
 import socialImg from "../../../assets/images/social-network.webp";
 import todolistImg from "../../../assets/images/todoList.webp";
 import weatherImg from "../../../assets/images/weather-app.webp";
+import shopyImg from "../../../assets/images/shopy.webp";
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles";
 import {AnimatePresence, motion} from "framer-motion"
@@ -25,17 +26,17 @@ const tabsItems: Array<{ title: string, status: TabStatusType }> = [
     {
         title: "React",
         status: "react"
-    },/*
+    },
     {
-        title: "In progress",
-        status: "in-progress"
-    }*/
+        title: "full-stack",
+        status: "full-stack"
+    }
 ]
 
 const worksData = [
     {
         title: "TodoList",
-        text: "List of todo lists and tasks.",
+        text: `List of todo lists and tasks made with TS, MUI, React, Redux Toolkit, Saga, Storybook, Axios, Formik`,
         src: todolistImg,
         link: "https://mariyan23.github.io/TodoList",
         code: "https://github.com/MariyaN23/TodoList",
@@ -44,7 +45,7 @@ const worksData = [
     },
     {
         title: "Social Network",
-        text: "A service containing information about users.",
+        text: `Web app containing information about users using TS, React, Redux, React Router DOM, Formik, Axios`,
         link: "https://mariyan23.github.io/social-network",
         code: "https://github.com/MariyaN23/social-network",
         src: socialImg,
@@ -53,7 +54,7 @@ const worksData = [
     },
     {
         title: "Counter",
-        text: "",
+        text: `The counter was created using TS, React, Redux, Local Storage`,
         link: "https://mariyan23.github.io/counter/",
         code: "https://github.com/MariyaN23/counter",
         src: counterImg,
@@ -62,7 +63,7 @@ const worksData = [
     },
     {
         title: "Game: Catch the orange",
-        text: "The game is about capybaras trying to catch oranges.",
+        text: `It’s a game created by using classes. The game is about capybaras trying to catch orange`,
         link: "https://mariyan23.github.io/Game-Catch-the-orange/",
         code: "https://github.com/MariyaN23/Game-Catch-the-orange",
         src: gameImg,
@@ -71,7 +72,7 @@ const worksData = [
     },
     {
         title: "Weather App",
-        text: "",
+        text: `Weather app on React and with Local Storage`,
         link: "https://mariyan23.github.io/weather-app/",
         code: "https://github.com/MariyaN23/weather-app",
         src: weatherImg,
@@ -80,12 +81,21 @@ const worksData = [
     },
     {
         title: "Capybara chat",
-        text: "",
+        text: `A project where I use scss, RTK, websocket library - Socket.io`,
         link: "https://mariyan23.github.io/capybara-chat-front/",
         code: "https://github.com/MariyaN23/chat",
         src: capybaraChat,
         type: "react",
         id: 6
+    },
+    {
+        title: "Shopy",
+        text: `Online shope, created with Mantine, Express, MongoDB, JWT, also connected payments in Stripe`,
+        link: "https://shopy-test-task.onrender.com/",
+        code: "https://github.com/MariyaN23/shopy-test-task",
+        src: shopyImg,
+        type: "full-stack",
+        id: 7
     }
 ]
 
@@ -100,8 +110,8 @@ export const Works: React.FC = () => {
     if (currentFilterStatus === "react") {
         filteredWorks = worksData.filter(work => work.type === "react")
     }
-    if (currentFilterStatus === "in-progress") {
-        filteredWorks = worksData.filter(work => work.type === "in-progress")
+    if (currentFilterStatus === "full-stack") {
+        filteredWorks = worksData.filter(work => work.type === "full-stack")
     }
 
     function changeFilterStatus(value: TabStatusType) {

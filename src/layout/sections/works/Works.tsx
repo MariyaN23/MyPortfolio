@@ -10,6 +10,7 @@ import socialImg from "../../../assets/images/social-network.webp";
 import todolistImg from "../../../assets/images/todoList.webp";
 import weatherImg from "../../../assets/images/weather-app.webp";
 import shopyImg from "../../../assets/images/shopy.webp";
+import realEstate from "../../../assets/images/real-estate-nextjs.png";
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles";
 import {AnimatePresence, motion} from "framer-motion"
@@ -96,7 +97,16 @@ const worksData = [
         src: shopyImg,
         type: "full-stack",
         id: 7
-    }
+    },
+    {
+        title: "Find Real Estate",
+        text: `Accommodation search app, made with Next.js, Tailwind CSS, Google maps API, Clerk, supabase`,
+        link: "https://real-estate-nextjs-rho.vercel.app/",
+        code: "https://github.com/MariyaN23/real-estate-nextjs",
+        src: realEstate,
+        type: "full-stack",
+        id: 7
+    },
 ]
 
 export const Works: React.FC = () => {

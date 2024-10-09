@@ -105,7 +105,7 @@ const worksData = [
         code: "https://github.com/MariyaN23/real-estate-nextjs",
         src: realEstate,
         type: "full-stack",
-        id: 7
+        id: 8
     },
 ]
 

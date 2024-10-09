@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/MyPortfolio/static/js/main.b3f5f831.js",
+    "main.js": "/MyPortfolio/static/js/main.6637f125.js",
     "static/js/787.25eaef86.chunk.js": "/MyPortfolio/static/js/787.25eaef86.chunk.js",
+    "static/media/real-estate-nextjs.png": "/MyPortfolio/static/media/real-estate-nextjs.3748069d1e0c03e4593e.png",
     "static/media/photo.webp": "/MyPortfolio/static/media/photo.9960b08b4e8953b488c9.webp",
     "static/media/game-catch-the-orange.webp": "/MyPortfolio/static/media/game-catch-the-orange.04e70c97810cc304ab46.webp",
     "static/media/shopy.webp": "/MyPortfolio/static/media/shopy.af8cd236dbe8aa189eb6.webp",
     "static/media/capybara-chat.webp": "/MyPortfolio/static/media/capybara-chat.b4b2fd756be272051690.webp",
     "static/media/icons-sprite.svg": "/MyPortfolio/static/media/icons-sprite.af2000ba9fa9807cd671a825db7b67be.svg",
+    "static/media/social-network.webp": "/MyPortfolio/static/media/social-network.f70b3ca17269bf5f1bdb.webp",
     "static/media/todoList.webp": "/MyPortfolio/static/media/todoList.459006835f933c6fdb65.webp",
-    "static/media/social-network.webp": "/MyPortfolio/static/media/social-network.ed3f37b1d56261887285.webp",
     "static/media/weather-app.webp": "/MyPortfolio/static/media/weather-app.f122aa36af149b06f198.webp",
     "static/media/counter.webp": "/MyPortfolio/static/media/counter.0a4696e7859d1f2baba4.webp",
     "index.html": "/MyPortfolio/index.html",
-    "main.b3f5f831.js.map": "/MyPortfolio/static/js/main.b3f5f831.js.map",
+    "main.6637f125.js.map": "/MyPortfolio/static/js/main.6637f125.js.map",
     "787.25eaef86.chunk.js.map": "/MyPortfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.b3f5f831.js"
+    "static/js/main.6637f125.js"
   ]
 }

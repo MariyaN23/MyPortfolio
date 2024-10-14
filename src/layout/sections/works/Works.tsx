@@ -36,8 +36,8 @@ const tabsItems: Array<{ title: string, status: TabStatusType }> = [
 
 const worksData = [
     {
-        title: "TodoList",
-        text: `List of todo lists and tasks made with TS, MUI, React, Redux Toolkit, Saga, Storybook, Axios, Formik`,
+        title: "Task manager",
+        text: `It is a sleek and user-friendly app designed to help you efficiently manage your time and tasks. It empowers you to effortlessly create, track, and complete your to-do list, significantly enhancing your organization and productivity.`,
         src: todolistImg,
         link: "https://mariyan23.github.io/TodoList",
         code: "https://github.com/MariyaN23/TodoList",
@@ -45,8 +45,8 @@ const worksData = [
         id: 1
     },
     {
-        title: "Social Network",
-        text: `Web app containing information about users using TS, React, Redux, React Router DOM, Formik, Axios`,
+        title: "ConnectSphere",
+        text: `This is a social platform that helps users find others with similar interests. It allows users to create profiles, add information, search for contacts, and communicate through messaging tools, aiming to expand social networks and facilitate interactions.`,
         link: "https://mariyan23.github.io/social-network",
         code: "https://github.com/MariyaN23/social-network",
         src: socialImg,
@@ -54,8 +54,8 @@ const worksData = [
         id: 2
     },
     {
-        title: "Counter",
-        text: `The counter was created using TS, React, Redux, Local Storage`,
+        title: "CountUP",
+        text: `CountUP is a thoughtfully designed and easy-to-navigate mobile application that provides a seamless experience for counting and incrementing numbers.`,
         link: "https://mariyan23.github.io/counter/",
         code: "https://github.com/MariyaN23/counter",
         src: counterImg,
@@ -64,7 +64,7 @@ const worksData = [
     },
     {
         title: "Game: Catch the orange",
-        text: `It’s a game created by using classes. The game is about capybaras trying to catch orange`,
+        text: `Creating a game in native JavaScript with utilizing classes, object-oriented programming (OOP) principles, and design patterns to develop an engaging and interactive gaming experience`,
         link: "https://mariyan23.github.io/Game-Catch-the-orange/",
         code: "https://github.com/MariyaN23/Game-Catch-the-orange",
         src: gameImg,
@@ -72,8 +72,8 @@ const worksData = [
         id: 4
     },
     {
-        title: "Weather App",
-        text: `Weather app on React and with Local Storage`,
+        title: "WeatherWise",
+        text: `It is an intuitive app that helps you quickly and easily find and view the weather forecast for any city around the world. You can access up-to-date information about temperature, humidity, wind speed, and other weather conditions for the city you select. It helps you stay informed about current and upcoming weather conditions, making your life more comfortable and predictable.`,
         link: "https://mariyan23.github.io/weather-app/",
         code: "https://github.com/MariyaN23/weather-app",
         src: weatherImg,
@@ -81,8 +81,8 @@ const worksData = [
         id: 5
     },
     {
-        title: "Capybara chat",
-        text: `A project where I use scss, RTK, websocket library - Socket.io`,
+        title: "CapyСhat",
+        text: `Online platform provides a welcoming environment for interacting with friends, and colleagues. It features an intuitive interface for exchanging messages, engaging in diverse discussions, organizing gatherings, and simply enjoying leisurely conversations`,
         link: "https://mariyan23.github.io/capybara-chat-front/",
         code: "https://github.com/MariyaN23/chat",
         src: capybaraChat,
@@ -91,7 +91,7 @@ const worksData = [
     },
     {
         title: "Shopy",
-        text: `Online shope, created with Mantine, Express, MongoDB, JWT, also connected payments in Stripe`,
+        text: `Allows you to access information about products available in the store, view the contents of your cart, and check your purchase history. You can conveniently track products you're interested in, add them to your cart for future checkout, and review your past orders.`,
         link: "https://shopy-test-task.onrender.com/",
         code: "https://github.com/MariyaN23/shopy-test-task",
         src: shopyImg,
@@ -99,8 +99,8 @@ const worksData = [
         id: 7
     },
     {
-        title: "Find Real Estate",
-        text: `Accommodation search app, made with Next.js, Tailwind CSS, Google maps API, Clerk, supabase`,
+        title: "FindRealty",
+        text: `You can quickly and easily find your perfect home by filtering based on your preferences such as area, price, and more. It also provides detailed property descriptions, photos, and the ability to contact agents and schedule viewings. Whether you're looking to rent an apartment, buy a home, or invest in commercial real estate, FindRealty can help you find the ideal property that suits your needs and budget.`,
         link: "https://real-estate-nextjs-rho.vercel.app/",
         code: "https://github.com/MariyaN23/real-estate-nextjs",
         src: realEstate,

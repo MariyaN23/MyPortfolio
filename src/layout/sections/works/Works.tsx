@@ -11,6 +11,7 @@ import todolistImg from "../../../assets/images/todoList.webp";
 import weatherImg from "../../../assets/images/weather-app.webp";
 import shopyImg from "../../../assets/images/shopy.webp";
 import realEstate from "../../../assets/images/real-estate-nextjs.png";
+import moviesApp from "../../../assets/images/cinematch.webp";
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles";
 import {AnimatePresence, motion} from "framer-motion"
@@ -29,7 +30,11 @@ const tabsItems: Array<{ title: string, status: TabStatusType }> = [
         status: "react"
     },
     {
-        title: "full-stack",
+        title: "Angular",
+        status: "angular"
+    },
+    {
+        title: "fullstack",
         status: "full-stack"
     }
 ]
@@ -107,6 +112,15 @@ const worksData = [
         type: "full-stack",
         id: 8
     },
+    {
+        title: "CineMatch",
+        text: `Search and find your favorite movies quickly and conveniently. CineMatch offers a wide selection of movies of all genres, from classics to the latest premieres. Use the convenient search and enjoy cinema and TV Shows!`,
+        link: "https://paralect-test-49e89.web.app/home",
+        code: "https://github.com/MariyaN23/movie-app",
+        src: moviesApp,
+        type: "angular",
+        id: 9
+    },
 ]
 
 export const Works: React.FC = () => {
@@ -122,6 +136,9 @@ export const Works: React.FC = () => {
     }
     if (currentFilterStatus === "full-stack") {
         filteredWorks = worksData.filter(work => work.type === "full-stack")
+    }
+    if (currentFilterStatus === "angular") {
+        filteredWorks = worksData.filter(work => work.type === "angular")
     }
 
     function changeFilterStatus(value: TabStatusType) {
